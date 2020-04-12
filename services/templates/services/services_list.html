@@ -1,0 +1,279 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static 'css/normalize.css' %}>
+    <link rel="stylesheet" href={% static "css/style.css" %}>
+    <link rel="stylesheet" href={% static "css/slider.css" %}>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Шапка полностью -->
+        <div class="overheader">
+            <div class="container"><div class="overheader_img"><a href="#"><img src={% static "img/oveheader_logo.png" %} alt="oveheader_logo"></a></div></div>
+        </div>
+        <div class="header">
+            <div class="container">
+                <div class="menu">
+                    {% for o in menu %}
+                        <div class='menu_block'>
+                            <a href="">{{ o.title }}</a>
+                        </div>
+        	    {% endfor %}
+                </div>
+                <div class="services">
+                    {% for s in services %}
+                    <div class="services_block"><img src="{{ s.image.url }}" alt="services"><div class='menu menu_block'><div><a href="">{{s.title}}</a></div></div></div>
+                    {% endfor %}
+                </div>
+                <div class="slider">
+                    <div class="slider__wrapper">
+                      <div class="slider__item">
+                        <div style="height: 250px; background: orange;">1</div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: green;">2</div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: violet;">3</div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: coral;">4</div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: brown;">5</div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: orchid;">6</div>
+                      </div>
+                      <div class="slider__item">
+                        <div style="height: 250px; background: aqua;">7</div>
+                      </div>
+                    </div>
+                    <a class="slider__control slider__control_left" href="#" role="button"></a>
+                    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+                  </div>
+            </div>
+        </div>
+            <!-- конец шапки полностью -->
+
+        <div class="about">
+            <div class="container">
+                <h1 class="about_header">О DesignPark</h1>
+                <!-- /.about_header -->
+                <div class="about_text">РуссКом предлагает технологии широкоформатной и УФ печати на основе японских принтеров Mimaki (Мимаки). У нас вы можете купить плоттер данной марки и расходные материалы к нему. К вашим услугам крупнейший сертифицированный сервисный центр в России. Обратившись к нам, вы можете рассчитывать на внимательное отношение, профессиональную консультацию, оперативную и качественную обработку заявки. <br> <br>
+
+                    Широкоформатный принтер Mimaki — это печатающее устройство для нанесения изображений с высокой точностью на различные поверхности. Это могут быть плакаты, фотообои, интерьерная печать, фотографии, фрески, мебель, ткань, одежда, спортивная форма, сувениры, изделия из пластика и стекла и др. В линейке моделей Mimaki сочетаются передовые технологии и высочайшее качество печати. Их активно применяют в рекламе, дизайне, интерьрной полиграфии, мебельных и проектно-строительных организациях.
+                    <br> <br>
+                    Любой широкоформатный плоттер будет обладать отличным качеством печати и подобран индивидуально под ваши задачи. На нашем официальном сайте вы можете ознакомиться с описанием, возможностями и особенностями каждой модели.
+                    <br><br>
+                    Мы рады делиться опытом и приглашаем вас в нашу Школу операторского мастерства, где проводится полное обучение процессу печати.
+                    <br><br>
+                    Более подробную информацию по ценам, доставке, имеющимся моделям оборудования вы можете получить по телефону +7 (495) 785-58-12 или заказать обратный звонок на нашем сайте, и специалист сам свяжется с вами в ближайшее время.
+                    
+                    </div>
+                <!-- /.about_text -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.about -->
+
+
+        <div class="advantages">
+            <div class="container">
+                <div class="advantages_header">Преимущества</div>
+        <!-- /.advantages_header -->
+        <div class="advantages_blocks">
+            <div class="advantages_block">
+                <div class="advantages_h1">Печатная визитка</div>
+                <!-- /.advantages_h1 -->
+                <div class="advantages_text">"Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor <br> incididunt ut labore et dolore.</div>
+                <!-- /.advantages_text -->
+                <div  class="btn_item"  ><button>Подробнее</button></div>
+            </div>
+            <!-- /.advantages_block -->
+            <div class="advantages_block">
+                <div class="advantages_h1">Печатная визитка</div>
+                <!-- /.advantages_h1 -->
+                <div class="advantages_text">"Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor <br> incididunt ut labore et dolore.</div>
+                <!-- /.advantages_text -->
+                <div  class="btn_item"  ><button>Подробнее</button></div>
+            </div>
+            <!-- /.advantages_block -->
+            <div class="advantages_block">
+                <div class="advantages_h1">Печатная визитка</div>
+                <!-- /.advantages_h1 -->
+                <div class="advantages_text">"Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor <br> incididunt ut labore et dolore.</div>
+                <!-- /.advantages_text -->
+                <div  class="btn_item"  ><button>Подробнее</button></div>
+            </div>
+            <!-- /.advantages_block -->
+            <div class="advantages_block">
+                <div class="advantages_h1">Печатная визитка</div>
+                <!-- /.advantages_h1 -->
+                <div class="advantages_text">"Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor <br> incididunt ut labore et dolore.</div>
+                <!-- /.advantages_text -->
+                <div  class="btn_item"  ><button>Подробнее</button></div>
+            </div>
+            <!-- /.advantages_block -->
+            <div class="advantages_block">
+                <div class="advantages_h1">Печатная визитка</div>
+                <!-- /.advantages_h1 -->
+                <div class="advantages_text">"Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor <br> incididunt ut labore et dolor.</div>
+                <!-- /.advantages_text -->
+                <div  class="btn_item"  ><button>Подробнее</button></div>
+            </div>
+            <!-- /.advantages_block -->
+            <div class="advantages_block">
+                <div class="advantages_h1">Печатная визитка</div>
+                <!-- /.advantages_h1 -->
+                <div class="advantages_text">"Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor <br> incididunt ut labore et dolor.</div>
+                <!-- /.advantages_text -->
+                <div  class="btn_item"  ><button>Подробнее</button></div>
+            </div>
+            <!-- /.advantages_block -->
+        </div>
+        <div class="advantages_btn"><button>Все услуги</button></div>
+            </div>
+            <!-- /.container -->
+    </div>
+        <!-- /.advantages -->
+
+     <div class="lowermenu">
+          <div class="container">
+            <div class="menu_column">
+              <div class="menu_header">Комплекс услуг</div>
+              <!-- /.menu_header -->
+              <div class="menu_item"><img src="" alt=""><a href="">Под ключ</a></div>
+              <!-- /.menu_item -->
+              <div class="menu_item"><img src="" alt=""><a href="">Под ключ</a></div>
+              <!-- /.menu_item -->
+              <div class="menu_item"><img src="" alt=""><a href="">Под ключ</a></div>
+              <!-- /.menu_item -->
+            </div>
+            <!-- /.menu_column -->
+            <div class="menu_column">
+              <div class="menu_header">Контакты</div>
+              <!-- /.menu_header -->
+              <div class="menu_item"><img src="" alt=""><a href="">WhatsApp</a></div>
+              <!-- /.menu_item -->
+              <div class="menu_item"><img src="" alt=""><a href="">Instagram</a></div>
+              <!-- /.menu_item -->
+              <div class="menu_item"><img src="" alt=""><a href="">Телефон</a></div>
+              <!-- /.menu_item -->
+            </div>
+            <!-- /.menu_column -->
+            <div class="menu_column">
+              <div class="menu_header">О компании</div>
+              <!-- /.menu_header -->
+              <div class="menu_item"><img src="" alt=""><a href="">О нас</a></div>
+              <!-- /.menu_item -->
+              <div class="menu_item"><img src="" alt=""><a href="">Работа у нас</a></div>
+              <!-- /.menu_item -->
+              <div class="menu_item"><img src="" alt=""><a href=""> Акции и подарки</a></div>
+              <!-- /.menu_item -->
+            </div>
+            <!-- /.menu_column -->
+          </div>
+          <!-- /.container -->
+      </div>
+        <!-- /.lowermenu -->
+
+
+
+
+        <script>
+            'use strict';
+            var multiItemSlider = (function () {
+              return function (selector, config) {
+                var
+                  _mainElement = document.querySelector(selector), // основный элемент блока
+                  _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
+                  _sliderItems = _mainElement.querySelectorAll('.slider__item'), // элементы (.slider-item)
+                  _sliderControls = _mainElement.querySelectorAll('.slider__control'), // элементы управления
+                  _sliderControlLeft = _mainElement.querySelector('.slider__control_left'), // кнопка "LEFT"
+                  _sliderControlRight = _mainElement.querySelector('.slider__control_right'), // кнопка "RIGHT"
+                  _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+                  _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента    
+                  _positionLeftItem = 0, // позиция левого активного элемента
+                  _transform = 0, // значение транфсофрмации .slider_wrapper
+                  _step = _itemWidth / _wrapperWidth * 100, // величина шага (для трансформации)
+                  _items = []; // массив элементов
+                // наполнение массива _items
+                _sliderItems.forEach(function (item, index) {
+                  _items.push({ item: item, position: index, transform: 0 });
+                });
+        
+                var position = {
+                  getMin: 0,
+                  getMax: _items.length - 1,
+                }
+        
+                var _transformItem = function (direction) {
+                  if (direction === 'right') {
+                    if ((_positionLeftItem + _wrapperWidth / _itemWidth - 1) >= position.getMax) {
+                      return;
+                    }
+                    if (!_sliderControlLeft.classList.contains('slider__control_show')) {
+                      _sliderControlLeft.classList.add('slider__control_show');
+                    }
+                    if (_sliderControlRight.classList.contains('slider__control_show') && (_positionLeftItem + _wrapperWidth / _itemWidth) >= position.getMax) {
+                      _sliderControlRight.classList.remove('slider__control_show');
+                    }
+                    _positionLeftItem++;
+                    _transform -= _step;
+                  }
+                  if (direction === 'left') {
+                    if (_positionLeftItem <= position.getMin) {
+                      return;
+                    }
+                    if (!_sliderControlRight.classList.contains('slider__control_show')) {
+                      _sliderControlRight.classList.add('slider__control_show');
+                    }
+                    if (_sliderControlLeft.classList.contains('slider__control_show') && _positionLeftItem - 1 <= position.getMin) {
+                      _sliderControlLeft.classList.remove('slider__control_show');
+                    }
+                    _positionLeftItem--;
+                    _transform += _step;
+                  }
+                  _sliderWrapper.style.transform = 'translateX(' + _transform + '%)';
+                }
+        
+                // обработчик события click для кнопок "назад" и "вперед"
+                var _controlClick = function (e) {
+                  if (e.target.classList.contains('slider__control')) {
+                    e.preventDefault();
+                    var direction = e.target.classList.contains('slider__control_right') ? 'right' : 'left';
+                    _transformItem(direction);
+                  }
+                };
+        
+                var _setUpListeners = function () {
+                  // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+                  _sliderControls.forEach(function (item) {
+                    item.addEventListener('click', _controlClick);
+                  });
+                }
+        
+                // инициализация
+                _setUpListeners();
+        
+                return {
+                  right: function () { // метод right
+                    _transformItem('right');
+                  },
+                  left: function () { // метод left
+                    _transformItem('left');
+                  }
+                }
+        
+              }
+            }());
+        
+            var slider = multiItemSlider('.slider')
+        
+          </script>
+</body>
+</html>
